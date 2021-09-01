@@ -349,8 +349,14 @@ hr {
 .footer-row p {
   line-height: 35px;
 }
+.footer-left .fa,
+.footer-right .fa {
+  font-size: 20px;
+  color: #009688;
+  margin: 10px;
+}
 .footer-img {
-  max-width: 370px;
+  max-width: 300px;
   opacity: 0.1;
   position: absolute;
   left: 50%;
@@ -361,24 +367,33 @@ hr {
 .social-link {
   text-align: center;
 }
-.social-link .yy {
+.social-link .fa {
   height: 40px;
   width: 40px;
   font-size: 20px;
   line-height: 40px;
   border: 1px solid #009688;
-  columns: #22f7e1e7;
+  border-radius: 7px;
   margin: 40px 5px 0;
-  cursor: pointer;
-  transition: 0.5s;
-  background: #3cc2b4;
+  color: #009688;
+  transition: 0.4s;
 }
-.social-link .yy:hover {
+.social-link .fa:hover {
   background: #009688;
-  color: antiquewhite;
+  color: #fff;
   transform: translateY(-11px);
 }
 .social-link p {
   font-size: 12px;
   margin-top: 10px;
+}
+@media screen and (max-width: 770px) {
+  .footer-left,
+  .footer-right {
+    flex-basis: 100%;
+    font-size: 14px;
+  }
+  .footer-img {
+    top: 25%;
+  }
 }
